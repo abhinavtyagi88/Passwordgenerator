@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="miniProject1.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <h1>Password Generator</h1>
+            <div class="copy-box">
+               
+                <input readonly placeholder="Password" class="display" data-passwordDisplay>
+                <button data-copy onclick="copyContent()">
+                    <span data-copyMsg class="active"></span>
+                    <img src="copy-icon.jpg" width="20" alt="">
+                </button>
+            </div>
+            
+            <br>
+
+           <div class="input">
+                <div class="length">
+                    <h4>Password length:</h4>
+                    <p data-lengthNumber>0</p> 
+                </div>
+                <hr>
+
+                                 
+               <br>
+               <div class="range-center">
+                   <input type="range" name="range-input"  min="1" max="16"  class="range" data-lengthSlider  > 
+               </div>
+               <br>
+
+            
+               <div class="div">
+                   <input type="checkbox"  id="Uppercase">
+                   <label for="Uppercase">Include Uppercase Letter</label>
+               </div>
+   
+               <div class="div">
+                   <input type="checkbox" name="" id="Lowercase">
+                   <label for="Lowercase">Include Lowercase Letter</label>
+               </div>
+   
+               <div class="div">
+                   <input type="checkbox" name="" id="numbers">
+                   <label for="numbers">Include numbers</label>
+               </div>
+               <div class="div">
+                   <input type="checkbox" name="" id="Symbols">
+                   <label for="Symbols">Include Symbols</label>
+               </div>
+               <br>
+               <hr>
+   
+               <div class="quality">
+                   <label for="">Strength</label>
+                   <div class="indicator-box" data-indicator></div>
+               </div>
+              <center>
+               <button type="button"  class="Generate">Generate</button>
+              </center>
+            
+            </div>
+            
+        </div>
+        
+        
+
+    </div>
+
+    <script src="miniProject1.js"></script>
+    
+</body>

@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    background:linear-gradient(45deg, rgb(247, 115, 92),rgb(251, 124, 101),rgb(238, 73, 44));
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    border-radius: 10px;
+}
+.Password-box{
+    height: 20px;
+    /* border: 10px; */
+    box-shadow: 0 0  10px blue;
+    /* border-radius: 10px; */
+    
+}
+.copy-box{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+
+
+
+}
+span{
+    opacity:0;
+    width:auto;
+}
+.active{
+    width: auto;
+    opacity: 1;
+}
+
+
+.input{
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.indicator-box{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+
+    height:15px;
+    width: 15px;
+    border-radius: 10px;
+    
+}
+.length{
+    display: flex;
+    justify-content: space-between;
+}
+
+.range-center{
+    color: rgb(220, 129, 12);
+    /* background-color: turquoise; */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    
+}
+
+input[type="range"]{
+    background-color: aqua;
+    thumb-color:red;
+}
+
+/* thumb{
+    color: blue;
+} */
+
+.quality{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+/* input{
+    box-shadow: 0 0 10px rgb(8, 28, 247);
+} */
+.Generate{
+    background-color: aquamarine;
+}
